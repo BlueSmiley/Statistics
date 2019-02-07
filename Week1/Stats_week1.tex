@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\setlength{\parskip}{1em}
+
+\title{Week 1 Questions}
+\author{tprasad@tcd.ie 16326505}
+\pagenumbering{gobble}
+\begin{document}
+\maketitle
+\begin{flushleft}
+Question 1.
+
+(a) 10! since pick 10 choices with no replacement, each unique and no other limitations 
+	\[ = 3628800 \]
+	
+(b) E and F must appear together so treat as one set taking two slots so now 9 slots. 
+	9! but also order of E and F can swap so $9!*2!$ since 2 elements in set $\{E, F\}$ 
+	\[ = 725760 \]
+
+(c) Permutation formula. 6 slots so 6! but set of $\{N,N\}$ and $\{A,A,A\}$ has 2! and 3! ordering within the sets that don't matter. Hence $ \displaystyle \frac{6!}{(2!*3!)}$ 
+ 	\[ = 60 \]
+
+(d) 3 slots. 5 unique choices. Assume order matters since letter arrangements. 
+	Since 3 slots we don't care about the order of the 2 we don't pick. All elements are unique
+	Hence $\displaystyle \frac{5!}{2!}$ 
+	\[ = 60 \]
+	
+	Correction:
+	
+	Without any indication apparently order doesnt matter for this question so instead its
+	$\displaystyle \binom{5}{3}$ if order doesn't matter 
+	\[ = 10 \]
+	
+Question 2.
+
+(a) $6^4$ Since 4 repetitions and 10 choices each time (with replacement) and order matters. 
+	\[ = 1296 \]
+	
+(b) $\displaystyle \binom{4}{2}$ ways to pick exactly 2 slots being 3 and $5^{(4-2)}$ choices for each non-three slot
+	hence $\displaystyle \binom{4}{2}*(5^2)$ \\
+	\[ = 150 \]
+	
+(c)$ \displaystyle \binom{4}{2}*(5^2)$ where 2 3s + $\displaystyle \binom{4}{3}*(5)$ where 3 3s and $\displaystyle \binom{4}{4}$ where all 3s = $150 + 20 + 1$
+	\[ = 171\]
+	
+Question 3.
+
+(a) 8! ways to order cards but 4 sets with 2 duplicate elems each 
+	$ \displaystyle \frac{8!}{(2!)^4} $ 
+	\[ = 2520 \] 
+	
+(b) Both same set = $\displaystyle \binom{4}{1}$ = 4 ways.
+	Different sets = $\displaystyle \binom{4}{2}$ = 6 ways
+	Order doesnt matter
+	Hence 6+4 = 10 unique combinations of two aces from the 8 cards
+	\[ = 10 \]
+	
+	Correction:
+	Both have to be different apparently so ignore the 4 extra choices and we get just 
+	\[ = 6 \]
+	
+(c) $ \displaystyle \binom{2}{1} + \binom{2}{2} = 2 + 1 =3 $from same logic as before
+	\[= 3 \]
+	
+	Alternative way to same answer: \\
+	$\displaystyle \frac{4!}{2!*2!*2!}$ because $\displaystyle \frac{4!}{2!*2!}$ unique permutations of the 4 good cards. 
+	But also we don't care about order of the final two cards we selected hence divide by 2! again.
+	\[ = 3 \]
+     
+	
+
+	
+\end{flushleft}
+\end{document}

@@ -1,0 +1,37 @@
+Q1
+	n bits. 2 bit errors. R = 2 N = n
+	nC2 = n!/(2!*(n-2!))
+	Given n = 3
+	Assume 0 represents error and 1 represents don't care
+	
+	001
+	010
+	100
+	= 3 ways
+	
+Q2 
+	Assume for a number order matter
+	3! = 6
+	4!/(4-2)! = 4!/(2!) = 4*3 = 12
+
+Q3
+	Assume order doesn't matter
+	choose 5 from 8 * choose 3 from 9
+	8C5 * 9C3 = 4704
+	
+Q4
+	(i) 12!
+	(ii) 12! - 11!*2! ///treat two people as one
+	(iii) 11! * 2!
+	
+Q5
+	length of array = 2
+	if pick n then (n-1) choices 
+	for every n (n-1) choices 
+	(n-1) choices + (n-2) choices till n-x = 1
+	
+	arithmetic progression = (n-1)((n-1) + 1))/2
+	
+	
+	
+
