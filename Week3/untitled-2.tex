@@ -48,8 +48,9 @@ Question 3
 	$\frac{1}{n-1}*\frac{n-1}{n}$ chance on second try when k = 2 \newline
 	\[\frac{n-1}{n}*\frac{n-2}{n-1}*\frac{1}{n-2}\]
 	...  and so on \newline
-	\[\frac{(n-1)*(n-2)*...(n-k+1)}{(n-1+1)*(n-2+1)*...(n-k+1)}*\frac{1}{n-k+1}\]
+	\[\frac{(n-1)*(n-2)*...(n-(k-1))}{(n-1+1)*(n-2+1)*...(n-(k-1)+1)}*\frac{1}{n-k+1}\]
 	
+	*note: we have k-1 wrong answers so  $n - (k-1) = n - k + 1$
 	all except last term of top sequence and first term of bottom sequence cancel
 	$\frac{n-k+1}{n}*\frac{1}{n-k+1}$ which cancels to \newline
 	$\frac{1}{n}$
