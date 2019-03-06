@@ -1,0 +1,84 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{ {./} }
+\setlength{\parskip}{1em}
+
+\title{Week 5 Questions}
+\author{tprasad@tcd.ie 16326505}
+\pagenumbering{gobble}
+\begin{document}
+\maketitle
+\begin{flushleft}
+Question 1
+
+	(a) \[\text{Chance of picking both same} = \frac{1}{2}*\frac{4}{9}*2 = \frac{4}{9}\] 
+		\[\text{Chance of picking both different} = \frac{1}{2}*\frac{5}{9}*2 = \frac{5}{9}\]
+		\[\text{Expected Value} = \frac{4}{9}*1.1 + \frac{5}{9}*\left(-1\right) = -0.0667 \]
+	
+	(b)
+		\[\left(1.1 - \left(-0.0667\right)\right)^2*\frac{4}{9} = 0.605\]
+		\[(-1 - (-0.0667))^2*\frac{5}{9} = 0.484\]
+		Variance = \[0.605 + 0.484 = 1.089\]
+		
+Question 2
+
+(a)
+	n people selected \newline
+	X is bernoulli random variable \newline
+	for any given i, $ P(Xi=1) = 0.6 $
+	\[ E(Xi) =  P(Xi=1) = 0.6 \]
+	\[ Var(Xi)  = 0.6*(1-0.6) = 0.24 \]
+	
+(c)
+	E[Y] is the sum of all the E[Xi] for i=0 to i=n hence it is different.
+	
+(d) due to linearity of expected value 
+	\[ E\left[\frac{1}{n}*Y\right] = \frac{1}{n}*E[Y] = \]
+	\[ E[Xi] = 0.6 \] for any given i since 
+	\[ E[Y] = n*E[Xi] \]
+	
+(e)
+	\[ Var(Xi) = 0.24 \]
+	\[ Var(Y) = n*Var(X) \] as Y is a binomial random variable
+	\[ Var\left(\frac{1}{n}*Y\right) = \left(\frac{1}{n}\right)^2*Var(Y) = \]
+	\[ \frac{1}{n}*Var(X) \]
+	
+Question 3
+
+(a)
+		13 balls 5 white 8 red \newline
+		\[ P(X1=1) = \frac{5}{13} \]
+		\[P(X1=0) =\frac{ 8}{13} \]
+		\[P(X2=1\vert X1=1) = \frac{4}{12} \]
+		\[P(X2=1 \vert X1=0) = \frac{5}{12} \]
+		\[P(X2=1) = \frac{5}{13}*\frac{4}{12}  + \frac{8}{13}*\frac{5}{12} = 0.385 = \frac{5}{13} \]
+		\[P(X2=0 \vert X1=1) = \frac{8}{12} \]
+		\[P(X2=0 \vert X1=0) = \frac{7}{12} \]
+		
+		\[P(X1=1 \cap X2 =1) = \frac{5}{13}*\frac{4}{12} = 0.128 \]
+		\[P(X1=1 \cap X2 =0) = \frac{5}{13}*\frac{8}{12} = 0.256 \]
+		\[P(X1=0 \cap X2 =1) = \frac{8}{13}*\frac{5}{12} = 0.256 \]
+		\[P(X1=0 \cap X2 =0) = \frac{8}{13}*\frac{7}{12} = 0.359 \]
+		
+(b)
+		No they are not independent
+		\[ P(X1=1 \cap X2=1) = 0.128 \]
+		But $P(X1=1) = \frac{5}{13}$
+		 \[ P(X2=1) = \frac{5}{13} \]
+		\[ \frac{5}{13}^2 = 0.148 \]
+		Since P(X1=1)*P(X2=1) does not equal$ P(X1=1 \cap X2=1)$ they are not independent
+		
+(c) 
+		\[ P(X2=1) = \frac{5}{13} \]
+		\[ P(X2=0) = \frac{8}{13} \]
+		Bernoulli random variable hence \[ E(X2) = P(X2=1) = \frac{5}{13} = .385 \]
+		
+(d)
+		Similar logic as q before.
+		\[ P(X2=1|X1=1) = \frac{4}{12} = 0.333 \]	
+	
+	
+\end{flushleft}
+\end{document}

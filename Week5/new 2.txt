@@ -1,0 +1,62 @@
+(1/2)*(4/9)*2 = 4/9 chance of picking both same
+(1/2)*(5/9)*2 = 5/9 chance of picking both different
+(4/9)*1.1 + (5/9)*(-1) = -0.0667
+
+variance = E[X^2] - E[X]^2
+	or E[(X−E[X])^2].
+	or in english the mean squared distance of X from the mean
+	((1.1 - (-0.0667))^2)*(4/9) = 0.605
+	((-1 - (-0.0667))^2)*(5/9) = 0.484
+	.605 + .484 = 1.089
+	
+q2
+	n people selected
+	X is indicator random variable
+	P(X=1) = 0.6
+	
+	for any given i
+	E(Xi) is 0.6
+	Var(Xi) = (.6)*(.4) = 0.24
+		
+(c)
+	E[Y] is the sum of all the E[Xi] for i=0 to i=n hence it is different.
+	
+(d) due to linearity of expected value E[(1/n)*Y] = (1/n)*E[Y] =
+	E[Xi] = 0.6 for any given i since E[Y] = n*E[Xi] 
+	
+
+(e)	Var(Xi) = .24
+	Var(Y) = n*Var(X) as binomial random variable
+	Var((1/n)*Y) = (1/n^2)*Var(Y) =
+	(1/n)*Var(X)
+	
+Q3
+	(a) 
+		13 balls 5 white 8 red
+		P(X1=1) = 5/13
+		P(X1=0) = 8/13
+		P(X2=1|X1=1) = 4/12
+		P(X2=1|X1=0) = 5/12
+		P(X2=1) = (5/13)*(4/12)  + (8/13)*(5/12) = 0.385 = 5/13
+		P(X2=0|X1=1) = 8/12
+		P(X2=0|X1=0) = 7/12
+		
+		P(X1=1 and X2 =1) = (5/13)*(4/12) = 0.128
+		P(X1=1 and X2 =0) = (5/13)*(8/12) = 0.256
+		P(X1=0 and X2 =1) = (8/13)*(5/12) = 0.256
+		P(X1=0 and X2 =0) = (8/13)*(7/12) = 0.359
+		
+	(b) No they are not independent
+		P(X1=1 and X2=1) = 0.128
+		But P(X1=1) = 5/13 and P(X2=1) = 5/13
+		(5/13)^2 = 0.148
+		Since P(X1=1)*P(X2=1) does not equal P(X1=1 and X2=1) they are not independent
+		
+	(c) P(X2=1) = 5/13
+		P(X2=0) = 8/13
+		Bernoulli random variable hence E(X2) = P(X2=1) = 5/13 = .385
+		
+	(d) Similar logic as q before.
+		
+		
+	(d) P(X2=1|X1=1) = 4/12 = 0.333	
